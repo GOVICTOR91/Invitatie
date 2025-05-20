@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invitație la Botez - Lucas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Invitație la Botez</h1>
+        <p>
+            Sunt cel mai frumos dar pe care Dumnezeu l-a făcut părinților mei
+            și mă numesc <span class="name">Lucas</span>.
+        </p>
+        <p>
+            Dornic să vă cunosc, vă invit împreună cu mama și tata,
+            <span class="highlight">Lidia și Victor Gotonoaga</span>,
+            la botezul meu.
+        </p>
+
+        <div class="details">
+            <p>în ziua de <span class="date-time">09.08.2022</span>, ora <span class="date-time">16:00</span>,</p>
+            <p>la <span class="location">Biserica „Intrarea în templu a Maicii Domnului”</span></p>
+            <p>și la petrecerea pe care o dau în cinstea mea</p>
+            <p>la restaurantul <span class="location">„Tinereta”, Bardar</span> începând cu orele <span class="date-time">18:00</span>.</p>
+        </div>
+
+        <p class="rsvp">Abia aștept să vă întâlnesc!</p>
+
+        <div class="form-section">
+            <h2>Confirmă-ți Prezența</h2>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label>Prezența:</label>
+                    <div class="radio-group">
+                        <label for="presenceYes">
+                            <input type="radio" id="presenceYes" name="presence" value="Da" required> Da
+                        </label>
+                        <label for="presenceNo">
+                            <input type="radio" id="presenceNo" name="presence" value="Nu"> Nu
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="familyName">Nume și Prenume:</label>
+                    <input type="text" id="familyName" name="familyName" required />
+                </div>
+                <div class="form-group">
+                    <label for="adultsCount">Număr Adulți:</label>
+                    <input type="number" id="adultsCount" name="adultsCount" min="0" value="0" required />
+                </div>
+                <div class="form-group">
+                    <label for="childrenCount">Număr Copii:</label>
+                    <input type="number" id="childrenCount" name="childrenCount" min="0" value="0" required />
+                </div>
+                <button type="submit">Trimite Confirmarea</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+
+        <footer>
+            Vă mulțumim pentru prezență!
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
